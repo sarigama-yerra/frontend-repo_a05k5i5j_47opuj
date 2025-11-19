@@ -1,0 +1,61 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 259 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.1.123:3000/
+Error:   Failed to scan for dependencies from entries:
+  /home/workspace/src/App.jsx
+/home/workspace/src/Test.jsx
+/home/workspace/src/main.jsx
+/home/workspace/src/components/GlobalStyles.jsx
+/home/workspace/src/components/GradientMesh.jsx
+/home/workspace/src/components/Hero.jsx
+/home/workspace/src/components/NeuralSpline.jsx
+
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mExpected "{" but found "\\"[0m
+
+    src/components/NeuralSpline.jsx:8:41:
+[37m      8 │ ...spense fallback={<div className=[32m\[37m"absolute inset-0 bg-[#0f1312]\...
+        │                                    [32m^[37m
+        ╵                                    [32m{[0m
+
+
+    at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+    at /home/workspace/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/workspace/node_modules/esbuild/lib/main.js:1315:45)
+    at buildResponseToResult (/home/workspace/node_modules/esbuild/lib/main.js:943:7)
+    at /home/workspace/node_modules/esbuild/lib/main.js:955:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/home/workspace/node_modules/esbuild/lib/main.js:954:54)
+    at handleRequest (/home/workspace/node_modules/esbuild/lib/main.js:647:17)
+    at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:672:7)
+    at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+10:38:33 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/NeuralSpline.jsx:8:41: ERROR: Expected "{" but found "\\"
+10:38:58 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/NeuralSpline.jsx:8:41: ERROR: Expected "{" but found "\\"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/NeuralSpline.jsx:8:41
+  
+  Expected "{" but found "\\"
+  6  |    return (
+  7  |      <div className="relative h-full w-full">
+  8  |        <Suspense fallback={<div className=\"absolute inset-0 bg-[#0f1312]\" />}> 
+     |                                           ^
+  9  |          <Spline scene={url} style={{ width: '100%', height: '100%' }} />
+  10 |        </Suspense>
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
