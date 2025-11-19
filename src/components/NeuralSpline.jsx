@@ -5,7 +5,7 @@ function NeuralSpline() {
   const url = useMemo(() => 'https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode', [])
   return (
     <div className="relative h-full w-full">
-      <Suspense fallback={<div className=\"absolute inset-0 bg-[#0f1312]\" />}> 
+      <Suspense fallback={<div className="absolute inset-0 bg-[#0f1312]" />}> 
         <Spline scene={url} style={{ width: '100%', height: '100%' }} />
       </Suspense>
       {/* Soft gradient overlay to match palette */}
